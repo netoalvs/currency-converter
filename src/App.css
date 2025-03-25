@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #ff5722;
+  --background-color: #121212;
+  --card-bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --button-bg-color: #6200ea;
+  --button-hover-color: #3700b3;
+  --card-shadow: rgba(255, 255, 255, 0.1);
+  --input-border-color: #444;
+  --input-bg-color: #333;
+  --input-text-color: #fff;
+  --link-color: #bb86fc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card, .conversion-container {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  margin-top: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+input {
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  border: 1px solid var(--input-border-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff5722;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
